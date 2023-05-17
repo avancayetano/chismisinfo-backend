@@ -137,3 +137,5 @@ Dataset - Group 21.xlsx
 data/misinfo_users_tweets.csv
 
 .vscode/
+
+*.csv
