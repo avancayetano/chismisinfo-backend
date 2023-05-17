@@ -1,0 +1,240 @@
+tweet_url,tweet_id,leni_sentiment,marcos_sentiment,incident,account_type,tweet_type,content_type,country,has_leni_ref,alt-text
+https://twitter.com/honeycanto/status/861580591208124416,861580591208124416,Negative,Neutral,Others,Identified,"Text, Reply",Emotional,Singapore,1,
+https://twitter.com/HotKramer/status/1514112215485665280,1514112215485665280,Negative,Positive,Scandal,Anonymous,"Image, Reply",Rational,Philippines,1,"{four images;
+one image is of a cartoon depicting a cartoonish Leni and a cartoonish Bam supposedly planning to release a fake scandal}"
+https://twitter.com/SexymhieQ/status/1514119913677660168,1514119913677660168,Negative,Positive,Scandal,Anonymous,"Text, Image, Reply",Rational,New Zealand,1,{image of a cartoon depicting a cartoonish Leni and a cartoonish Bam supposedly planning to release a fake scandal}
+https://twitter.com/ItsJamMagno/status/1511560623062020097,1511560623062020097,Neutral,Neutral,Ladder,Identified,"Text, Image",Rational,Philippines,1,{image of a person in pink tipping down with a ladder}
+https://twitter.com/ARJE2025/status/1511595019345743873,1511595019345743873,Negative,Neutral,Ladder,Anonymous,"Text, Image, Reply",Rational,,1,"{image of morphed leni with saying ""18hrs work - 6hrs sleep"";
+replying to Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/kennbert27/status/1511617259214876673,1511617259214876673,Neutral,Neutral,Ladder,Identified,"Text, Reply","Rational, Emotional",,0,"{replying to Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/rs015dbph/status/1513230161914712064,1513230161914712064,Neutral,Neutral,Ladder,Identified,"Text, Reply",Emotional,Philippines,0,"{quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/esor11oasudac/status/1511914226860060675,1511914226860060675,Negative,Neutral,Ladder,Anonymous,"Text, Reply",Emotional,,1,"{quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/rduarna040974/status/1511697461932265477,1511697461932265477,Neutral,Neutral,Ladder,Identified,"Text, Reply",Emotional,,0,"{quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/ItsJamMagno/status/1511626865240203265,1511626865240203265,Neutral,Neutral,Ladder,Identified,"Text, Video, Reply",Rational,Philippines,1,"{edited video showing a person in pink climbing a ladder erratically;
+quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/destiny0621/status/1511620455928836098,1511620455928836098,Neutral,Neutral,Ladder,Anonymous,"Text, Reply",Rational,Philippines,0,"{quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/DJhun3/status/1511610960888295426,1511610960888295426,Neutral,Neutral,Ladder,Anonymous,"Text, Reply",Emotional,,0,"{quoting Jam Magno tweet which reads
+""BREAKING NEWS: Tricia Robredo, anak ni Leni, nalaglag sa hagdan after magpumulit umakyat para kumbinsihin ang mga solid BBM Supporters.
+
+BBM nga daw kasi sila, wag nang magpumilit, yan tuloy.""}"
+https://twitter.com/ranting_idiot/status/1513068241815367680,1513068241815367680,Neutral,Neutral,Ladder,Anonymous,"Text, Image",Rational,,1,{image of a person in pink tipping down with a ladder}
+https://twitter.com/k_aletha/status/1476921314783166468,1476921314783166468,Negative,Neutral,Quarantine,Anonymous,"Text, Image",Rational,,1,"{screenshot of jay sonza's fb post reads: Sabi mo Madam dapat walang palakasan. Bakit iyong anak mong dumating direcho sa bahay, hindi dumaan sa Quarantine Protocol?}"
+https://twitter.com/anathemacrapola/status/1476341711194312705,1476341711194312705,Negative,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,1,"{quoting a tweet by a Mel Chor with caption ""Her daugther tested positive on the 24th and is already negative 5 days later.
+
+Milagrosa talaga mga robredo."" Quoted tweet also has images.}"
+https://twitter.com/ross05lex/status/1476848933771124739,1476848933771124739,Neutral,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/IndaymissM/status/1477800680911822848,1477800680911822848,Neutral,Neutral,Quarantine,Anonymous,Text,Emotional,Philippines,0,
+https://twitter.com/nguimiii/status/1477836395461103616,1477836395461103616,Neutral,Neutral,Quarantine,Anonymous,"Text, Reply","Rational, Emotional",Philippines,0,
+https://twitter.com/Alnhilp/status/1476774630736027648,1476774630736027648,Neutral,Neutral,Quarantine,Anonymous,"Text, Reply","Rational, Emotional",Philippines,0,
+https://twitter.com/Alnhilp/status/1476764605020241925,1476764605020241925,Neutral,Neutral,Quarantine,Anonymous,"Text, Image",Rational,Philippines,0,"{image showing News5 quoting Department of Tourism Secretary Bernadette Romulo-Puyat ""She told her friends na she had connections daw kaya she could cut quarantine... On her fifth day, bumalik sa hotel, nagpa-swab, nag-positive. Tapos 'yung mga ibang kasama niya nag-positive din. In-fact yung mga establishment, nag-positive din sila doon. Andaming nag-positive because of the girl. Umamin din naman siya eh. I saw na, umamin na siya finally na she skipped quarantine.""}"
+https://twitter.com/TheInvisibleDon/status/1477871478284566528,1477871478284566528,Negative,Neutral,Quarantine,Anonymous,Text,Rational,,1,
+https://twitter.com/ShirleyPSastre/status/1478272756458598400,1478272756458598400,Negative,Neutral,Quarantine,Identified,"Text, Reply",Rational,Philippines,1,"{replying to ???'s tweet which reads ""Gusto niyong manalo si Leni pero isa sa mga anak niya ay quarantine protocol violator. GANYAN BA ANG GUSTO NIYONG TULARAN?""}"
+https://twitter.com/Alnhilp/status/1477912381796007938,1477912381796007938,Negative,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,Philippines,1,"{replying to ???'s tweet which reads ""Gusto niyong manalo si Leni pero isa sa mga anak niya ay quarantine protocol violator. GANYAN BA ANG GUSTO NIYONG TULARAN?""}"
+https://twitter.com/Bongmc5/status/1476215270259761160,1476215270259761160,Negative,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,,
+https://twitter.com/eto_tome/status/1477901881741815810,1477901881741815810,Negative,Neutral,Quarantine,Anonymous,Text,Rational,,1,
+https://twitter.com/rikkidavao/status/1477761714552639488,1477761714552639488,Neutral,Neutral,Quarantine,Identified,Text,Rational,Philippines,1,
+https://twitter.com/GlyflyMacky/status/1526428787906293766,1526428787906293766,Negative,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,1,
+https://twitter.com/nitzcruzat/status/1477185500918124544,1477185500918124544,Negative,Neutral,Quarantine,Anonymous,"Text, Image, Reply",Rational,Philippines,1,"{screenshot of jay sonza's fb post reads: Sabi mo Madam dapat walang palakasan. Bakit iyong anak mong dumating direcho sa bahay, hindi dumaan sa Quarantine Protocol?}"
+https://twitter.com/rey_leonie/status/1477072698601656320,1477072698601656320,Neutral,Neutral,Quarantine,Identified,"Text, Reply",Rational,,1,
+https://twitter.com/Gerrytabije/status/1477849834476347392,1477849834476347392,Negative,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,1,
+https://twitter.com/Gerrytabije/status/1477849199282511873,1477849199282511873,Neutral,Neutral,Quarantine,Anonymous,"Text, Reply",Rational,,1,
+https://twitter.com/up_kyla/status/1519028771126669312,1519028771126669312,Neutral,Neutral,Baguio,Anonymous,"Text, Image, Reply",Emotional,,0,"{Alt-text - two images.
+First image shows Jillian and her team with the following overlay text: 
+'""Let me educate you..."" episode of Jillian Robredo and the gang at Baguio Public Market...'
+
+Second image shows a street vendor}"
+https://twitter.com/up_kyla/status/1519023182447267841,1519023182447267841,Neutral,Neutral,Baguio,Anonymous,URL,Emotional,,0,"{The tweet only contains an embedded YouTube video accusing Jillian Robredo of saying ""let me educate you"" and hence got shouted at at the Baguio public market.}"
+https://twitter.com/Azhl3y_/status/1518996390872944642,1518996390872944642,Neutral,Positive,Baguio,Anonymous,"Text, Video",Emotional,,0,"{Alt-text video: Attached video accusing Jillian Robredo of saying ""let me educate you"" and hence got shouted at at the Baguio public market.}"
+https://twitter.com/RichImperial/status/1519221352108015616,1519221352108015616,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,Unspecified,0,
+https://twitter.com/LelangmoVlogger/status/1519097537868681216,1519097537868681216,Neutral,Neutral,Baguio,Identified,"Text, Video",Emotional,,0,{Alt-text video: video of Jillian Robredo and her team getting shouted at at the Baguio public market}
+https://twitter.com/bwesittt/status/1518961220401102848,1518961220401102848,Neutral,Neutral,Baguio,Anonymous,Text,Rational,Philippines,0,
+https://twitter.com/Moniqu3n/status/1518982150149746688,1518982150149746688,Neutral,Positive,Baguio,Anonymous,"Text, Reply",Emotional,,1,
+https://twitter.com/1stylemomsi/status/1519169074076524544,1519169074076524544,Neutral,Positive,Baguio,Anonymous,Text,Emotional,Singapore,1,
+https://twitter.com/hgamboa74/status/1519025171734048769,1519025171734048769,Neutral,Neutral,Baguio,Identified,"Text, URL","Rational, Emotional",,1,
+https://twitter.com/Jnvlmcon/status/1519020857766686723,1519020857766686723,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Switzerland,0,
+https://twitter.com/imcelltalpisIII/status/1519140393149153280,1519140393149153280,Neutral,Neutral,Baguio,Anonymous,Text,Rational,Philippines,1,
+https://twitter.com/LeonardoBeatri7/status/1519149188071960576,1519149188071960576,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/KamaoNiJuan/status/1519113650719834112,1519113650719834112,Neutral,Neutral,Baguio,Anonymous,"Text, Image, URL",Emotional,Philippines,0,{Alt-text image: Screenshot of the YouTube page of the linked video}
+https://twitter.com/Sipin2Oruam/status/1519172992449753089,1519172992449753089,Negative,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,1,
+https://twitter.com/Sipin2Oruam/status/1519182448101257217,1519182448101257217,Neutral,Neutral,Baguio,Anonymous,"Text, URL, Reply",Emotional,Philippines,0,{Alt-text: Linked tweet can't be viewed because the account owner restricted who can see their tweets.}
+https://twitter.com/gelmesse/status/1519086339278487553,1519086339278487553,Negative,Neutral,Baguio,Anonymous,"Text, Image, URL",Emotional,,1,"{Alt-text image: Screenshot of a Facebook post that says Jillian Robredo was shouted at at the Baguio public market.
+
+Alt-text linked video: The video accuses Jillian Robredo of saying ""let me educate you"" and hence got shouted at at the Baguio public market.
+}"
+https://twitter.com/deathmagnetic24/status/1518982791102296071,1518982791102296071,Neutral,Neutral,Baguio,Anonymous,"Text, Image",Emotional,Philippines,1,"{Alt-text image: photo of a pink payment card with label ""VICTIM CARD""}"
+https://twitter.com/PoliticsBuster/status/1518966820442501120,1518966820442501120,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Unspecified,0,
+https://twitter.com/i_am_fjhei/status/1518986529137651714,1518986529137651714,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/StClairPD191403/status/1518971513394720778,1518971513394720778,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/Yelle007/status/1518963449870839811,1518963449870839811,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Unspecified,0,
+https://twitter.com/eliseo_pacis/status/1519009535373234176,1519009535373234176,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,,0,
+https://twitter.com/i_am_maccoy/status/1518964779582320640,1518964779582320640,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,,0,
+https://twitter.com/camomelle75/status/1519118626712092674,1519118626712092674,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,Philippines,0,
+https://twitter.com/commonwizzy/status/1518962252384473089,1518962252384473089,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/titz29/status/1519162161393659906,1519162161393659906,Negative,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Unspecified,1,
+https://twitter.com/HombrePobre7/status/1519695664514408448,1519695664514408448,Negative,Neutral,Baguio,Identified,"Text, Reply",Emotional,,1,
+https://twitter.com/WaxIntsik/status/1519206049516978176,1519206049516978176,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/Unosyete07/status/1519181775184015361,1519181775184015361,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/nsmorado/status/1519149823655821312,1519149823655821312,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Unspecified,0,
+https://twitter.com/epica456/status/1519118000548622336,1519118000548622336,Negative,Neutral,Baguio,Anonymous,Text,Emotional,,1,
+https://twitter.com/rowena84620101/status/1519221791943667712,1519221791943667712,Neutral,Neutral,Baguio,Anonymous,"Text, URL",Emotional,,0,"{Alt-text video: Linked video accusing Jillian Robredo of saying ""let me educate you"" and hence got shouted at at the Baguio public market.}"
+https://twitter.com/Sipin2Oruam/status/1519254352690651137,1519254352690651137,Neutral,Positive,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/Kamiko08/status/1519010785569435649,1519010785569435649,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/taeluvkookie05/status/1519035254887321600,1519035254887321600,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,South Korea,0,
+https://twitter.com/KeiraHabacon/status/1519150741025619968,1519150741025619968,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/musikerong/status/1572050765740675078,1572050765740675078,Neutral,Neutral,Scandal,Anonymous,Text,Emotional,Australia,1,
+https://twitter.com/swifty_tarva/status/1513823885107822594,1513823885107822594,Neutral,Neutral,Scandal,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/JamesMamaril4/status/1523674286510477313,1523674286510477313,Negative,Neutral,Scandal,Identified,"Text, Reply",Rational,Philippines,1,
+https://twitter.com/olpips/status/1597908265689837568,1597908265689837568,Negative,Positive,Scandal,Anonymous,"Text, Reply",Emotional,Unspecified,1,
+https://twitter.com/JuanCar39131909/status/1550977765473923072,1550977765473923072,Negative,Neutral,Scandal,Anonymous,Text,Emotional,,0,
+https://twitter.com/sutrayanit/status/1514888402688225283,1514888402688225283,Negative,Neutral,Scandal,Anonymous,"Text, Reply",Emotional,,1,
+https://twitter.com/JamesMamaril4/status/1583696150955450369,1583696150955450369,Neutral,Neutral,Scandal,Identified,"Text, Reply","Rational, Emotional",Philippines,1,
+https://twitter.com/thun_poop/status/1514101709273899008,1514101709273899008,Negative,Neutral,Scandal,Identified,Text,Emotional,,0,
+https://twitter.com/DengJuliano/status/1513968292662333452,1513968292662333452,Neutral,Neutral,Others,Identified,"Text, URL",Rational,United Kingdom,1,
+https://twitter.com/SubidoBl/status/1511600943971782656,1511600943971782656,Neutral,Neutral,Others,Identified,"Text, URL",Rational,,1,
+https://twitter.com/Siberjerma/status/1511394065148956677,1511394065148956677,Neutral,Positive,Others,Identified,"Text, URL",Rational,,0,
+https://twitter.com/missbeautyto/status/1467518866289229826,1467518866289229826,Negative,Positive,Others,Anonymous,"Text, Reply",Emotional,Philippines,1,
+https://twitter.com/FreethoughtPH/status/1521010499550281728,1521010499550281728,Negative,Neutral,Scandal,Anonymous,"Text, Image, Reply",Rational,Philippines,1,
+https://twitter.com/TheSahuNews/status/1519392228195459074,1519392228195459074,Neutral,Neutral,Scandal,Media,"Text, URL",Rational,Unspecified,0,
+https://twitter.com/nazmulmarketer1/status/1519430310009659400,1519430310009659400,Neutral,Neutral,Scandal,Identified,"Text, URL",Rational,,0,
+https://twitter.com/newsminatii/status/1521224258826895360,1521224258826895360,Neutral,Neutral,Scandal,Media,"Text, URL",Rational,,0,
+https://twitter.com/BlueMan59263770/status/1519730999160020992,1519730999160020992,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,0,
+https://twitter.com/Vicvarg29296330/status/1514610597329272833,1514610597329272833,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,0,
+https://twitter.com/celzzz14/status/1519188603565338624,1519188603565338624,Neutral,Neutral,Baguio,Anonymous,Text,Rational,,0,
+https://twitter.com/jh3an2_arach3/status/1519149744198946816,1519149744198946816,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,,1,
+https://twitter.com/FabianLeoJohnQ1/status/1519111727136505856,1519111727136505856,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,1,
+https://twitter.com/ArlynMaog1/status/1519043857131851776,1519043857131851776,Neutral,Positive,Baguio,Identified,"Text, Reply",Rational,Canada,1,
+https://twitter.com/mark_mywordsPH/status/1519033169676484608,1519033169676484608,Neutral,Neutral,Baguio,Identified,Text,Rational,Philippines,0,
+https://twitter.com/KamaoNiJuan/status/1527861666184306690,1527861666184306690,Neutral,Positive,Baguio,Anonymous,"Text, Image",Rational,Philippines,1,{Alt-text image: Image is a screenshot of a GMA News FB post quoting Prof. Encinas-Franco comments on Vice President Leni Robredo's campaign. This tweet is in response to the image.}
+https://twitter.com/KembrlyFlores2/status/1519458992137072641,1519458992137072641,Neutral,Neutral,Baguio,Identified,"Text, Reply",Rational,Philippines,0,
+https://twitter.com/LuomiouOmeo/status/1519097837975445504,1519097837975445504,Neutral,Neutral,Baguio,Anonymous,"Text, Image, Reply",Rational,Unspecified,0,"{Alt-text image: image of fake tweets of jillian robredo. One tweet reads, ""GAGS ANG SARAP HAMPASIN NUNG BABAE TANGINA UGH""}"
+https://twitter.com/RjrMai/status/1519210400008458241,1519210400008458241,Neutral,Neutral,Baguio,Anonymous,"Text, Image",Emotional,,0,"{Alt-text image: screenshot of a youtube video thumbnail titled ""JILLIAN ROBREDO sa BAGUIO trending..."" [truncated]}"
+https://twitter.com/Joshua06602259/status/1519345712844066817,1519345712844066817,Negative,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,1,
+https://twitter.com/aapogi/status/1519179247289610240,1519179247289610240,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",United States,1,
+https://twitter.com/xdkyjz/status/1519148178213195776,1519148178213195776,Neutral,Neutral,Baguio,Anonymous,Text,Rational,Philippines,0,
+https://twitter.com/Maripos19656429/status/1519146995860094979,1519146995860094979,Negative,Neutral,Baguio,Anonymous,"Text, Image","Rational, Emotional",,1,"{Alt-text image: image of fake tweets of jillian robredo. One tweet reads, ""GAGS ANG SARAP HAMPASIN NUNG BABAE TANGINA UGH""}"
+https://twitter.com/rey_leonie/status/1519100489799172096,1519100489799172096,Neutral,Neutral,Baguio,Identified,"Text, Reply, Image","Rational, Emotional",,1,"{Alt-text image: image of a tweet of Tricia Robredo saying ""Tulog pa rin? Alas otso na.""}"
+https://twitter.com/ItsJamMagno/status/1519097838688374785,1519097838688374785,Neutral,Neutral,Baguio,Identified,"Text, Image","Rational, Emotional",Philippines,0,"{Alt-text image: image of fake tweets of jillian robredo. One tweet reads, ""GAGS ANG SARAP HAMPASIN NUNG BABAE TANGINA UGH""}"
+https://twitter.com/lookonionskin/status/1519009124671172608,1519009124671172608,Neutral,Neutral,Baguio,Anonymous,"Text, Reply, Video",Emotional,Philippines,1,"{Alt-text video: video is captioned ""Jillian Robredo sa Baguio nasigawan kasama ang mga nag H2H na Yellow Hepa Pinks. Sinusuklian na kayo ng mga tao sa pambubunganga niyo.""}"
+https://twitter.com/cutie_cheyene/status/1518965889680379904,1518965889680379904,Neutral,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",,0,
+https://twitter.com/PoliticsBuster/status/1518965790996791296,1518965790996791296,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",Unspecified,0,
+https://twitter.com/love_30alvarez/status/1518963149319417857,1518963149319417857,Neutral,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",Kuwait,0,
+https://twitter.com/Maureen101822/status/1518913500105834497,1518913500105834497,Neutral,Neutral,Baguio,Anonymous,Text,"Rational, Emotional",,0,
+https://twitter.com/TigasUlo0121/status/1519108622051328000,1519108622051328000,Neutral,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",,0,
+https://twitter.com/MsAndrienne/status/1519108524068184064,1519108524068184064,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",,1,
+https://twitter.com/asiaticbc/status/1518959459535450112,1518959459535450112,Neutral,Neutral,Baguio,Identified,"Text, Reply","Rational, Emotional",,0,
+https://twitter.com/Maripos19656429/status/1519352362275684354,1519352362275684354,Neutral,Neutral,Baguio,Anonymous,"Text, Image","Rational, Emotional",,0,"{Alt-text image: image of fake tweets of jillian robredo. One tweet reads, ""GAGS ANG SARAP HAMPASIN NUNG BABAE TANGINA UGH""}"
+https://twitter.com/tsg_sportsgrail/status/1519676710773571584,1519676710773571584,Neutral,Neutral,Scandal,Media,"Text, URL",Transactional,,1,
+https://twitter.com/gautamkapoor54/status/1519676678355750917,1519676678355750917,Neutral,Neutral,Scandal,Identified,"Text, URL",Transactional,India,1,
+https://twitter.com/AlexBNFC/status/1515594761679572996,1515594761679572996,Negative,Neutral,Scandal,Identified,Text,Rational,Philippines,1,
+https://twitter.com/James777jl7/status/1514689372582416418,1514689372582416418,Neutral,Neutral,Scandal,Anonymous,"Text, URL","Rational, Transactional",Unspecified,1,
+https://twitter.com/iamshanwein/status/1514651062543654929,1514651062543654929,Neutral,Positive,Scandal,Anonymous,"Text, Reply","Rational, Emotional",Philippines,0,
+https://twitter.com/DianaLook4/status/1527168921228308482,1527168921228308482,Neutral,Neutral,Scandal,Identified,"Text, Reply",Rational,,0,
+https://twitter.com/RogerSaday/status/1543477104913707008,1543477104913707008,Neutral,Neutral,Scandal,Identified,"Text, URL",Rational,,0,
+https://twitter.com/puro_reklamo02/status/1518980346293141504,1518980346293141504,Neutral,Neutral,Scandal,Anonymous,Text,Rational,,1,
+https://twitter.com/jandezra/status/1516573826275897346,1516573826275897346,Negative,Neutral,Scandal,Anonymous,"Text, Reply","Rational, Emotional",Philippines,1,
+https://twitter.com/ichooseyou98/status/1553278623360204800,1553278623360204800,Neutral,Neutral,Scandal,Anonymous,"Text, Reply",Rational,United Arab Emirates,1,
+https://twitter.com/SexymhieQ/status/1514148467492671488,1514148467492671488,Negative,Neutral,Scandal,Anonymous,"Text, Reply","Rational, Emotional",New Zealand,1,
+https://twitter.com/Marissa_bagain/status/1513570193637015552,1513570193637015552,Negative,Neutral,Scandal,Identified,Text,"Rational, Emotional",Philippines,1,
+https://twitter.com/ValarMorgULYSIS/status/1513390934184308737,1513390934184308737,Neutral,Neutral,Scandal,Anonymous,"Text, Reply",Rational,Unspecified,1,
+https://twitter.com/TelleAnoza/status/1527141638677893121,1527141638677893121,Negative,Neutral,Scandal,Anonymous,"Text, Reply, Image",Rational,,1,"{Alt-text image: a caricature of leni with caption ""Let us educate you: Ayaw ng taumbayan sa isang MANDARAYA! #LPIdiotsNoMorePH""}"
+https://twitter.com/Siangg15/status/1522562440180813825,1522562440180813825,Negative,Neutral,Scandal,Anonymous,Text,Rational,,1,
+https://twitter.com/ReginaMLagos1/status/1517290551569432576,1517290551569432576,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply","Rational, Emotional",,0,
+https://twitter.com/miladywinter3/status/1515609885291032580,1515609885291032580,Neutral,Neutral,Scandal,Anonymous,"Text, Reply, Image",Rational,,0,"{Alt-text image: screenshot of Aika's deleted tweet ""...It was me in the sex video. #EveryWoman""}"
+https://twitter.com/miladywinter3/status/1514713737701249032,1514713737701249032,Neutral,Neutral,Scandal,Anonymous,"Text, Reply, Image",Rational,,0,"{Alt-text image: screenshot of Aika's deleted tweet ""...It was me in the sex video. #EveryWoman""}"
+https://twitter.com/ultranews11/status/1519820301030281218,1519820301030281218,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,1,
+https://twitter.com/loppugly/status/1519785996522504192,1519785996522504192,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/kurii007/status/1519770089486229505,1519770089486229505,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/PoligenD/status/1519728355897184259,1519728355897184259,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,0,
+https://twitter.com/account1_news/status/1519699229861728256,1519699229861728256,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,0,
+https://twitter.com/loppugly/status/1519399030828187648,1519399030828187648,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,0,
+https://twitter.com/ultranews11/status/1519395051499134976,1519395051499134976,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,0,
+https://twitter.com/account1_news/status/1519629203196596224,1519629203196596224,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,1,
+https://twitter.com/loppugly/status/1519625844955697153,1519625844955697153,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/LeakedvideosO/status/1519625809400631297,1519625809400631297,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,1,
+https://twitter.com/ultranews11/status/1519625638231085057,1519625638231085057,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,1,
+https://twitter.com/NewsFood4/status/1519625350405402626,1519625350405402626,Neutral,Neutral,Scandal,Media,"Text, URL, Reply",Rational,,1,
+https://twitter.com/PoligenD/status/1519625301449486336,1519625301449486336,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/kurii007/status/1519623080661983232,1519623080661983232,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/loppugly/status/1519622899111542785,1519622899111542785,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/ultranews11/status/1519615560182640640,1519615560182640640,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/ultranews11/status/1519630912446767105,1519630912446767105,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/loppugly/status/1519619182954008576,1519619182954008576,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/ultranews11/status/1519618535865131009,1519618535865131009,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/PoligenD/status/1519618516244213760,1519618516244213760,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/XYZDailyNews/status/1519618348912369665,1519618348912369665,Neutral,Neutral,Scandal,Media,"Text, URL",Rational,,1,
+https://twitter.com/account1_news/status/1519618321875972096,1519618321875972096,Neutral,Neutral,Scandal,Media,"Text, URL",Rational,,1,
+https://twitter.com/NewsFood4/status/1519617785214775298,1519617785214775298,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,1,
+https://twitter.com/kurii007/status/1519617373614993408,1519617373614993408,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,1,
+https://twitter.com/kurii007/status/1519589686536282115,1519589686536282115,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,0,
+https://twitter.com/NewsFood4/status/1519589261057703942,1519589261057703942,Neutral,Neutral,Scandal,Media,"Text, URL",Rational,,0,
+https://twitter.com/PoligenD/status/1519585020767313920,1519585020767313920,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,0,
+https://twitter.com/ranker_house/status/1519553437742080002,1519553437742080002,Neutral,Neutral,Scandal,Anonymous,"Text, URL",Rational,,0,
+https://twitter.com/ranker_house/status/1519530275054759937,1519530275054759937,Neutral,Neutral,Scandal,Anonymous,"Text, URL, Reply",Rational,,0,
+https://twitter.com/marichelle94/status/1520094051168833537,1520094051168833537,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,,0,
+https://twitter.com/che_bisdak/status/1519165347307438085,1519165347307438085,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Unspecified,0,
+https://twitter.com/jjkchy97_ej/status/1519145938601738242,1519145938601738242,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/aapogi/status/1519168203129331714,1519168203129331714,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",United States,1,
+https://twitter.com/aapogi/status/1519167522230181888,1519167522230181888,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",United States,1,
+https://twitter.com/rene_twilight/status/1519016991411273728,1519016991411273728,Neutral,Neutral,Baguio,Anonymous,Text,"Rational, Emotional",Philippines,0,
+https://twitter.com/Sipin2Oruam/status/1519173481480392704,1519173481480392704,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Philippines,0,
+https://twitter.com/FabianLeoJohnQ1/status/1519110793358635008,1519110793358635008,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,1,
+https://twitter.com/iamAhappyTroll/status/1527468800895221760,1527468800895221760,Negative,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,1,
+https://twitter.com/ghesai/status/1520710772640587777,1520710772640587777,Negative,Positive,Baguio,Anonymous,"Text, Video",Emotional,,1,
+https://twitter.com/Pumadine/status/1544551922102718464,1544551922102718464,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/toh_em/status/1593492743325888513,1593492743325888513,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",Philippines,1,
+https://twitter.com/toh_em/status/1593492595199860736,1593492595199860736,Negative,Neutral,Baguio,Anonymous,"Text, Reply","Rational, Emotional",Philippines,1,
+https://twitter.com/Sab1n3_/status/1519269087766974464,1519269087766974464,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/myaaivy/status/1519218883759988737,1519218883759988737,Neutral,Positive,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/gersanilla/status/1519206840180957188,1519206840180957188,Neutral,Neutral,Baguio,Identified,"Text, Reply",Rational,,0,
+https://twitter.com/archiekins29/status/1519097313628925953,1519097313628925953,Negative,Neutral,Baguio,Identified,"Text, Reply","Rational, Emotional",Saudi Arabia,1,
+https://twitter.com/xal_rons/status/1519015708478558208,1519015708478558208,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,Mexico,0,
+https://twitter.com/lookonionskin/status/1519010436783702017,1519010436783702017,Neutral,Neutral,Baguio,Anonymous,"Text, Video, Reply","Rational, Emotional",Philippines,0,"{Alt-text video: screen recording of a video posted on facebook where someone can be heard shouting ""dayuhan ka lang dito, kami igorot kami""}"
+https://twitter.com/MonillaPen/status/1518979474460913666,1518979474460913666,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Philippines,0,
+https://twitter.com/archiekins29/status/1518976584291856385,1518976584291856385,Neutral,Neutral,Baguio,Identified,"Text, Reply",Rational,Saudi Arabia,0,
+https://twitter.com/realBren1/status/1518960796138491906,1518960796138491906,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Taiwan,0,
+https://twitter.com/fidcastillo/status/1519166941608706049,1519166941608706049,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/LeonardoBeatri7/status/1519149492083499009,1519149492083499009,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/PandabearCaryl/status/1518978968703045632,1518978968703045632,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,,0,
+https://twitter.com/MJulieto/status/1519425957698093056,1519425957698093056,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/catie_ceb/status/1519271711627255809,1519271711627255809,Neutral,Neutral,Baguio,Identified,"Text, Reply",Emotional,,0,
+https://twitter.com/joaqui_107/status/1519265987551707137,1519265987551707137,Negative,Neutral,Baguio,Identified,"Text, Reply",Emotional,Philippines,1,
+https://twitter.com/carl8082/status/1519184437849722880,1519184437849722880,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/PolitikQuo/status/1519179681408643072,1519179681408643072,Neutral,Neutral,Baguio,Identified,Text,Rational,,0,
+https://twitter.com/Mela27Glenn/status/1519179333922816001,1519179333922816001,Neutral,Neutral,Baguio,Identified,"Text, Reply",Rational,,0,
+https://twitter.com/IlIllIIlllIllII/status/1519139714229366789,1519139714229366789,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/getrichpinoy/status/1519139544951492610,1519139544951492610,Negative,Positive,Baguio,Anonymous,"Text, Video",Rational,United Arab Emirates,1,
+https://twitter.com/onepiecetsiken/status/1519133863376605184,1519133863376605184,Negative,Neutral,Baguio,Anonymous,"Text, Image",Rational,Unspecified,1,"{Alt-text image: photo of a pink payment card with label ""VICTIM CARD""}"
+https://twitter.com/TigasUlo0121/status/1519108083800489984,1519108083800489984,Neutral,Positive,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/xentie/status/1519098928821846018,1519098928821846018,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Rational,Philippines,0,
+https://twitter.com/saldyb/status/1519074560884482049,1519074560884482049,Negative,Neutral,Baguio,Identified,Text,"Rational, Emotional",Philippines,1,
+https://twitter.com/bong_ed/status/1518992081158492162,1518992081158492162,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,Philippines,0,
+https://twitter.com/AAPA_1971/status/1518992034371371013,1518992034371371013,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/PbbmLove/status/1518985764243185666,1518985764243185666,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Unspecified,0,
+https://twitter.com/AAPA_1971/status/1518983218711592960,1518983218711592960,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Philippines,0,
+https://twitter.com/BoyCavitenio/status/1518978155956293632,1518978155956293632,Neutral,Neutral,Baguio,Anonymous,"Text, Image, Reply",Emotional,Philippines,0,"{Alt-text image: gif of a man imitating a shouting action labeled ""FAKE DRAMA""}"
+https://twitter.com/ms94_Ot16KP/status/1518971397330153473,1518971397330153473,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,Unspecified,0,
+https://twitter.com/me_jcavalier/status/1518968754138345472,1518968754138345472,Neutral,Neutral,Baguio,Identified,Text,"Rational, Emotional",Thailand,1,
+https://twitter.com/IHateFakePple/status/1518960526272856064,1518960526272856064,Neutral,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,0,
+https://twitter.com/deepredthread/status/1518929748902092800,1518929748902092800,Neutral,Neutral,Baguio,Anonymous,Text,Emotional,Unspecified,1,
+https://twitter.com/Antonietta_666/status/1523955592616103936,1523955592616103936,Negative,Neutral,Baguio,Anonymous,"Text, Reply",Emotional,,1,
