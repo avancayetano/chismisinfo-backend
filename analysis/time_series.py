@@ -72,12 +72,13 @@ class TimeSeriesAnalysis:
                 + "-"
                 + self.df[col].dt.isocalendar().week.astype("str")
             )
-            self.df[col_day] = (
-                self.df[col].dt.year.astype("str")
-                + "-"
-                + self.df[col].dt.day.astype("str")
-            )
 
+            day_bins = [ts.day_of_year for ts in self.df[col]]
+            year_bins = [ts.year for ts in self.df[col]]
+            self.df[col_day] = [
+                f"{year_bins[i]}-{day_bins[i]}" for i in range(len(self.df.index))
+            ]
+            
             new_cols.extend([col_year, col_month, col_week, col_day])
 
         self.feats["cat"].extend(new_cols)

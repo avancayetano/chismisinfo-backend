@@ -16,12 +16,13 @@ class Visualizer:
     - [X] Scatterplots/histograms: features distribution
     - [X] Heat maps: features correlation
     - [X] Bar/swarm/violin plots: features comparison
-    - [ ] Line graphs: time series
+    - [X] Line graphs: time series
+        - [ ] time series of tweets
 
     Bonus:
     - [X] 3D/multidimensional/multivariate plots
         (e.g. Scatterplot matrix; see this blog for more examples)
-    - [ ] Interactive plots (e.g. Plotly)
+    - [X] Interactive plots (e.g. Plotly)
 
     NOTE: Each plot should have:
     - [X] A title/caption
@@ -35,9 +36,7 @@ class Visualizer:
         sns.set_palette("deep")
 
     def plot_topics_kde(self):
-        sns.set_palette("deep")
         df_less_row_1 = self.df.loc[2:202]
-        # Plot Pclass feature
         g = sns.kdeplot(
             self.df.date_posted[self.df.incident_num == 0],
             fill=True,
@@ -63,17 +62,15 @@ class Visualizer:
             fill=True,
             label="Other",
         )
-
-        plt.title("Distribution of Topic Tweets Across Time", fontsize=18, pad=20)
-
-        # Show legends
+        plt.yscale("log")
+        plt.title(
+            "Distribution of Disinformation Incident Tweets Across Time",
+            fontsize=18,
+            pad=20,
+        )
         plt.legend()
-
-        # Add plot labels for Pclass categories
-        # labels = ["", "Middle", "Lower"]
-        # plt.xticks(sorted(self.df.date_posted_day.unique()), labels)
-        # plt.gcf().set_size_inches(12, 12)
-        # plt.savefig("kde.png", dpi=100)
+        plt.gcf().set_size_inches(14, 12)
+        # plt.savefig("kde.png")
         plt.show()
 
     def plot_boxplot_join(self):
@@ -81,16 +78,20 @@ class Visualizer:
         df_without_account_dup["days_after_election"] = df_without_account_dup[
             "diff_joined_election"
         ]
+        df_without_account_dup = df_without_account_dup[
+            df_without_account_dup["is_misinfo"] == 1
+        ]
         sns.boxplot(
             x=df_without_account_dup["days_after_election"],
             orient="h",
         ).set(title="Distribution of Account Creation wrt Election Day")
-        plt.savefig("boxplot_acc.png")
+        # plt.savefig("boxplot_acc.png")
         plt.show()
 
     def plot_boxplot_date_posted(self):
         temp_df = self.df
         temp_df["days_after_election"] = temp_df["diff_date_posted_election"]
+        temp_df = temp_df[temp_df["is_misinfo"] == 1]
         sns.boxplot(
             x=temp_df["days_after_election"],
             orient="h",
@@ -119,8 +120,9 @@ class Visualizer:
             "tweet_type_num",
             "content_type_num",
         ]
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
         ax = sns.heatmap(
-            self.df[heatmap_feats].corr(), vmin=-1, vmax=1, cmap="PiYG", annot=True
+            relevant_df[heatmap_feats].corr(), vmin=-1, vmax=1, cmap="PiYG", annot=True
         )
         ax.set_title("Correlation among the numerical features.")
         # plt.gcf().set_size_inches(14, 14)
@@ -141,15 +143,16 @@ class Visualizer:
         print(">>> Plotted bargraph")
 
     def bargraph_sentiments(self):
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
         ax = sns.countplot(
-            data=self.df,
+            data=relevant_df,
             x="leni_sentiment",
             order=["negative", "neutral", "positive"],
         )
         ax.set_title("Number of tweets per Leni sentiment.")
         plt.show()
         ax = sns.countplot(
-            data=self.df,
+            data=relevant_df,
             x="marcos_sentiment",
             order=["negative", "neutral", "positive"],
         )
@@ -161,7 +164,8 @@ class Visualizer:
 
     def pairplot_leni_sentiment(self):
         # drop outlier
-        df = self.df[self.df["date_posted_std"].abs() <= 3]
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
+        df = relevant_df[relevant_df["date_posted_std"].abs() <= 3]
 
         pairplot_feats = [
             "followers_bin",
@@ -182,7 +186,8 @@ class Visualizer:
 
     def pairplot_has_leni_ref(self):
         # drop outlier
-        df = self.df[self.df["date_posted_std"].abs() <= 3]
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
+        df = relevant_df[relevant_df["date_posted_std"].abs() <= 3]
 
         pairplot_feats = [
             "followers_bin",
@@ -331,12 +336,15 @@ class Visualizer:
             self.plot_wordcloud(all_names, topic)
 
     def plot_wordcloud(self, all_names, topic: str):
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
         matches = {}
         if topic == "all":
-            tweets_str = " ".join(self.df["tweet_rendered"].str.lower())
+            tweets_str = " ".join(relevant_df["tweet_rendered"].str.lower())
         else:
             tweets_str = " ".join(
-                self.df[self.df["incident"] == topic]["tweet_rendered"].str.lower()
+                relevant_df[relevant_df["incident"] == topic][
+                    "tweet_rendered"
+                ].str.lower()
             )
 
         for name in all_names:
@@ -351,7 +359,78 @@ class Visualizer:
 
         plt.show()
 
+    def cumulative_account_join(self, is_misinfo):
+        misinfo_dict = {1: "misinfo", 0: "not_misintfo"}
+        relevant_df = self.df[self.df["is_misinfo"] == is_misinfo]
+        relevant_df = relevant_df.drop_duplicates(subset=["account_handle"])
+        join_month_bins = list(relevant_df["joined_month"])
+        join_month_bins.sort()
+
+        first_month = join_month_bins[0]
+        last_month = join_month_bins[-1]
+        year1, month1 = first_month.split("-")
+        yearn = last_month.split("-")[0]
+        plotly_df_months = []
+        plotly_df_counts = []
+        for y in range(int(year1), int(yearn) + 1):
+            for m in range(1, 13):
+                month_str = f"{y}-{m}"
+                count = (relevant_df["joined_month"] == month_str).sum()
+                plotly_df_months.append(month_str)
+                plotly_df_counts.append(count)
+        plotly_df = pd.DataFrame()
+        plotly_df["month"] = plotly_df_months
+        plotly_df["count"] = plotly_df_counts
+        plotly_df["cumulative"] = plotly_df["count"].cumsum()
+        plotly_df.to_csv(f"../data/joined_month_{misinfo_dict[is_misinfo]}.csv")
+
+    def compute_tweet_dist(self):
+        relevant_df = self.df[self.df["is_misinfo"] == 1]
+        date_posted_bins = sorted(
+            list(relevant_df["date_posted_day"]),
+            key=lambda td: (int(td.split("-")[0]), int(td.split("-")[1])),
+        )
+        first_day = date_posted_bins[0]
+        last_day = date_posted_bins[-1]
+        year1 = first_day.split("-")[0]
+        yearn = last_day.split("-")[0]
+        plotly_df_days = []
+        plotly_df_counts = []
+        for y in range(int(year1), int(yearn) + 1):
+            for d in range(1, 367):
+                day_str = f"{y}-{d}"
+                count = (relevant_df["date_posted_day"] == day_str).sum()
+                plotly_df_days.append(day_str)
+                plotly_df_counts.append(count)
+        plotly_df = pd.DataFrame()
+        plotly_df["day"] = plotly_df_days
+        plotly_df["count"] = plotly_df_counts
+        plotly_df["cumulative"] = plotly_df["count"].cumsum()
+        plotly_df.to_csv(f"../data/tweet_dist_per_day.csv")
+
+        a = plotly_df["day"]
+        b = plotly_df["cumulative"]
+    
+        c = pd.DataFrame({"Day":a, "Cumulative":b})
+
+        g = sns.lineplot(data=c, x="Day", y="Cumulative")
+        plt.title("Cumulative Tweet Dist By Day")
+        plt.xlabel("Day")
+
+        for index, label in enumerate(g.get_xticklabels()):
+            if index % 60 == 0:
+                label.set_visible(True)
+            else:
+                label.set_visible(False)
+
+        plt.xticks(rotation = 90, fontsize = 7)
+        plt.ylabel("Number of Tweets")
+        plt.show()
+
     def main(self):
+        self.compute_tweet_dist()
+        self.cumulative_account_join(0)
+        self.cumulative_account_join(1)
         # histograms
 
         # boxplots

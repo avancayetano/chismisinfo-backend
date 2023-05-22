@@ -60,7 +60,7 @@ class FeatureAnalysis:
 
         self.df["engagement_bin"] = pd.cut(
             self.df["engagement"].to_numpy(),
-            bins=[-np.inf, 5, 25, 625, 3125, np.inf],
+            bins=[-np.inf, 10, 100, 1000, 10000, np.inf],
             labels=[0, 1, 2, 3, 4],
         )
 

@@ -138,4 +138,5 @@ data/misinfo_users_tweets.csv
 
 .vscode/
 
-*.csv
+#API Keys
+secret.json

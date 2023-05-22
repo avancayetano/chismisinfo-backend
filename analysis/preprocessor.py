@@ -6,6 +6,10 @@ from ast import literal_eval
 from sklearn.preprocessing import OrdinalEncoder
 from itertools import combinations
 
+import copy
+import re
+import string
+
 
 class Preprocessor:
     """
@@ -320,6 +324,65 @@ class Preprocessor:
 
         print(">>> Cleaned tweet content")
 
+    def clean_tweet_emojis(self):
+        # Handle Emojis [2]
+        url_emoji = "https://drive.google.com/uc?id=1G1vIkkbqPBYPKHcQ8qy0G2zkoab2Qv4v"
+        df_emoji = pd.read_pickle(url_emoji)
+        df_emoji = {v: k for k, v in df_emoji.items()}
+
+        def emoji_to_word(text):
+            for emot in df_emoji:
+                text = re.sub(
+                    r"(" + emot + ")",
+                    "_".join(df_emoji[emot].replace(",", "").replace(":", "").split()),
+                    text,
+                )
+            return text
+
+        # Handle Emoticons [2]
+        url_emote = "https://drive.google.com/uc?id=1HDpafp97gCl9xZTQWMgP2kKK_NuhENlE"
+        df_emote = pd.read_pickle(url_emote)
+
+        def emote_to_word(text):
+            for emot in df_emote:
+                text = re.sub(
+                    "(" + emot + ")",
+                    "_".join(df_emote[emot].replace(",", "").split()),
+                    text,
+                )
+                text = text.replace("<3", "heart")  # not included in emoticons database
+                text = text.replace("🪄", "magicwand")
+                text = text.replace("🤪", "zanyface")
+                text = text.replace("🥳", "parytingface")
+                text = text.replace("🤯", "explodinghead")
+                text = text.replace("🤭", "facewithhandovermouth")
+                text = text.replace("🤮", "facevommiting")
+                text = text.replace("🥴", "woozyface")
+                text = text.replace("🇵🇭", "philippineflag")
+                text = text.replace(" — ", " ")
+                text = text.replace(" … ", " ")
+                text = text.replace("…", " ")
+                text = text.replace(" « ", " ")
+                text = text.replace(" “ ", "")
+                text = text.replace(" “", " ")
+                text = text.replace("“ ", " ")
+                text = text.replace("“", "")
+
+            return text
+
+        texts = copy.deepcopy(list(self.df["tweet_rendered"]))
+
+        texts = [emoji_to_word(t) for t in texts]
+        texts = [emote_to_word(t) for t in texts]
+        texts = [t.lower() for t in texts]
+
+        # remove punctuation
+        texts = [t.translate(str.maketrans("", "", string.punctuation)) for t in texts]
+
+        self.df["tweet_lower"] = texts
+        print(">>> Cleaned tweet emojis")
+        print(self.df.columns)
+
     def main(self) -> pd.DataFrame:
         """Main driver function"""
 
@@ -332,6 +395,7 @@ class Preprocessor:
 
         # extra preprocessing steps
         self.clean_tweet_content()
+        # self.clean_tweet_emojis()
         self.set_dtypes()
 
         return self.df

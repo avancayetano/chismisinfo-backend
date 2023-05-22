@@ -43,6 +43,37 @@ class DataExplore:
             validate="one_to_one",
         )
 
+        # read control tweets, add a new column: is_misinfo
+        df_control_scraped = pd.read_csv(
+            "../data/analysis-data/control_tweets_scraped.csv",
+            parse_dates=date_feats,
+        )
+        self.df["is_misinfo"] = [1 for i in range(len(self.df.index))]
+        df_control_scraped["is_misinfo"] = [
+            0 for i in range(len(df_control_scraped.index))
+        ]
+
+        # escape the assertion handlers for now
+        df_control_scraped["leni_sentiment"] = [
+            "neutral" for i in range(len(self.df.index))
+        ]
+        df_control_scraped["marcos_sentiment"] = [
+            "neutral" for i in range(len(self.df.index))
+        ]
+        df_control_scraped["incident"] = ["others" for i in range(len(self.df.index))]
+        df_control_scraped["account_type"] = [
+            "anonymous" for i in range(len(self.df.index))
+        ]
+        df_control_scraped["tweet_type"] = ["text" for i in range(len(self.df.index))]
+        df_control_scraped["content_type"] = [
+            "rational" for i in range(len(self.df.index))
+        ]
+        df_control_scraped["country"] = ["" for i in range(len(self.df.index))]
+        df_control_scraped["alt-text"] = ["" for i in range(len(self.df.index))]
+
+        # looks like concatenation was successful
+        self.df = pd.concat([self.df, df_control_scraped], ignore_index=True)
+
         feats: List[str] = list(self.df.columns)
         num_feats = [
             "following",
@@ -53,6 +84,7 @@ class DataExplore:
             "quote_tweets",
             "views",
             "has_leni_ref",
+            "is_misinfo",
         ]
 
         single_cat_feats = [
@@ -86,26 +118,26 @@ class DataExplore:
 
     def main(self):
         pass
-        print("-------- BEGIN: PREPROCESSING --------")
+        #print("-------- BEGIN: PREPROCESSING --------")
         # Preprocessing...
-        preprocessor = Preprocessor(self.df, feats=self.feats)
-        self.df = preprocessor.main()
-        print("-------- END: PREPROCESSING --------")
+        #preprocessor = Preprocessor(self.df, feats=self.feats)
+        #self.df = preprocessor.main()
+        #print("-------- END: PREPROCESSING --------")
 
-        print("------------ BEGIN: NLP ------------")
-        nlp = NLP(self.df, self.feats)
-        self.df = nlp.main()
-        print("------------- END: NLP -------------")
+        #print("------------ BEGIN: NLP ------------")
+        #nlp = NLP(self.df, self.feats)
+        #self.df = nlp.main()
+        #print("------------- END: NLP -------------")
 
-        print("-------------BEGIN: TIME SERIES ANALYSIS-------------")
-        time_series = TimeSeriesAnalysis(self.df, self.feats)
-        self.df = time_series.main()
-        print("-------------END: TIME SERIES ANALYSIS-------------")
+        #print("-------------BEGIN: TIME SERIES ANALYSIS-------------")
+        #time_series = TimeSeriesAnalysis(self.df, self.feats)
+        #self.df = time_series.main()
+        #print("-------------END: TIME SERIES ANALYSIS-------------")
 
-        print("-------------BEGIN: FEATURE ANALYSIS -------------")
-        feat_analysis = FeatureAnalysis(self.df, self.feats)
-        self.df = feat_analysis.main()
-        print("-------------END: FEATURE ANALYSIS-------------")
+        #print("-------------BEGIN: FEATURE ANALYSIS -------------")
+        #feat_analysis = FeatureAnalysis(self.df, self.feats)
+        #self.df = feat_analysis.main()
+        #print("-------------END: FEATURE ANALYSIS-------------")
 
         print("-------------BEGIN: VISUALIZER-------------")
         visualizer = Visualizer(self.df, self.feats)
