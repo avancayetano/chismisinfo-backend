@@ -1,14 +1,14 @@
 # pyright: basic
-import pandas as pd
-import numpy as np
-from typing import List, Dict
-from ast import literal_eval
-from sklearn.preprocessing import OrdinalEncoder
-from itertools import combinations
-
 import copy
 import re
 import string
+from ast import literal_eval
+from itertools import combinations
+from typing import Dict, List
+
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import OrdinalEncoder
 
 
 class Preprocessor:
@@ -244,6 +244,7 @@ class Preprocessor:
             "account_type": ["anonymous", "identified", "media"],
             "tweet_type": self.get_multi_categories("IRTUV"),
             "content_type": self.get_multi_categories("ERT"),
+            "robredo_sister": ["A", "J", "T", "AJ", "AT", "JT", "AJT"],
         }
         print(">>> Categorical to numerical mapping")
         print(categories)
@@ -321,6 +322,9 @@ class Preprocessor:
         self.df["tweet_rendered"] = self.df["tweet_rendered"].str.replace(
             url_regex, "", regex=True
         )
+        self.df["tweet_translated"] = self.df["tweet_translated"].str.replace(
+            url_regex, "", regex=True
+        )
 
         print(">>> Cleaned tweet content")
 
@@ -334,7 +338,9 @@ class Preprocessor:
             for emot in df_emoji:
                 text = re.sub(
                     r"(" + emot + ")",
-                    "_".join(df_emoji[emot].replace(",", "").replace(":", "").split()),
+                    " "
+                    + "_".join(df_emoji[emot].replace(",", "").replace(":", "").split())
+                    + " ",
                     text,
                 )
             return text
@@ -347,18 +353,20 @@ class Preprocessor:
             for emot in df_emote:
                 text = re.sub(
                     "(" + emot + ")",
-                    "_".join(df_emote[emot].replace(",", "").split()),
+                    " " + "_".join(df_emote[emot].replace(",", "").split()) + " ",
                     text,
                 )
-                text = text.replace("<3", "heart")  # not included in emoticons database
-                text = text.replace("🪄", "magicwand")
-                text = text.replace("🤪", "zanyface")
-                text = text.replace("🥳", "parytingface")
-                text = text.replace("🤯", "explodinghead")
-                text = text.replace("🤭", "facewithhandovermouth")
-                text = text.replace("🤮", "facevommiting")
-                text = text.replace("🥴", "woozyface")
-                text = text.replace("🇵🇭", "philippineflag")
+                text = text.replace(
+                    "<3", " heart "
+                )  # not included in emoticons database
+                text = text.replace("🪄", " magicwand ")
+                text = text.replace("🤪", " zanyface ")
+                text = text.replace("🥳", " parytingface ")
+                text = text.replace("🤯", " explodinghead ")
+                text = text.replace("🤭", " facewithhandovermouth ")
+                text = text.replace("🤮", " facevommiting ")
+                text = text.replace("🥴", " woozyface ")
+                text = text.replace("🇵🇭", " philippineflag ")
                 text = text.replace(" — ", " ")
                 text = text.replace(" … ", " ")
                 text = text.replace("…", " ")
@@ -370,7 +378,7 @@ class Preprocessor:
 
             return text
 
-        texts = copy.deepcopy(list(self.df["tweet_rendered"]))
+        texts = copy.deepcopy(list(self.df["tweet_translated"]))
 
         texts = [emoji_to_word(t) for t in texts]
         texts = [emote_to_word(t) for t in texts]
@@ -395,7 +403,7 @@ class Preprocessor:
 
         # extra preprocessing steps
         self.clean_tweet_content()
-        # self.clean_tweet_emojis()
+        self.clean_tweet_emojis()
         self.set_dtypes()
 
         return self.df

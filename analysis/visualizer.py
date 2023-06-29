@@ -385,7 +385,7 @@ class Visualizer:
         plotly_df.to_csv(f"../data/joined_month_{misinfo_dict[is_misinfo]}.csv")
 
     def compute_tweet_dist(self):
-        relevant_df = self.df[self.df["is_misinfo"] == 1]
+        relevant_df = self.df.loc[1:202]
         date_posted_bins = sorted(
             list(relevant_df["date_posted_day"]),
             key=lambda td: (int(td.split("-")[0]), int(td.split("-")[1])),
@@ -411,9 +411,9 @@ class Visualizer:
         a = plotly_df["day"]
         b = plotly_df["cumulative"]
     
-        c = pd.DataFrame({"Day":a, "Cumulative":b})
+        c = pd.DataFrame({"Day":a, "Count":b})
 
-        g = sns.lineplot(data=c, x="Day", y="Cumulative")
+        g = sns.lineplot(data=c, x="Day", y="Count")
         plt.title("Cumulative Tweet Dist By Day")
         plt.xlabel("Day")
 

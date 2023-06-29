@@ -12,10 +12,6 @@ import chart_studio.tools as tls
 import json
 
 
-with open("../../../secret.json") as file:
-    sec = json.load(file)
-    chart_studio.tools.set_credentials_file(username = sec['username'], api_key = sec['api_key'])
-
 df = pd.read_csv("../../../analysis/raph-analysis/candidate_misinfo_tweets_edited.csv")
 
 #only tweets posted in 2022
@@ -66,11 +62,19 @@ for y in years:
 
 
 joined_year_count = np.cumsum(joined_year_count)
+joined_month_count = np.cumsum(joined_month_count)
 
 #joined_month_count = np.cumsum(joined_month_count)
 
-df2 = pd.DataFrame({"Months": months2, "Count": joined_month_count})
+df2 = pd.DataFrame({"Months": years, "Count": joined_year_count})
 
-fig = px.line(df2, x = "Months", y = "Count", title = 'Number of Accounts Joined Per Month')
+print(df2)
 
-py.plot(fig, filename = "linegraph_accountsjoined", auto_open = True)
+sns.lineplot(data=df2, x="Months", y="Count")
+plt.xlabel('Time', fontsize=20)
+plt.ylabel('Count', fontsize=20)
+plt.title("Cumulative Number Of Accounts Joined", fontsize=20, pad=20)
+plt.legend()
+
+# Showing the plot using plt.show()
+plt.show()

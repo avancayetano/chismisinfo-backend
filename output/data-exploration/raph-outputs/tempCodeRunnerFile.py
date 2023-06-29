@@ -1,2 +1,2 @@
 
-fig = px.line(df2, x = "Months", y = "Count", title = 'Number of Accounts Joined Per Mont
+plt.title("Cumulative Number Of Accounts Joined", fontsize=20, pad=20)

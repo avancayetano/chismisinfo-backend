@@ -37,13 +37,14 @@ for year in years:
     for month in months:
         y_m.append((year, month))
         y_mlabel.append(str((year, month)))
-    
-print(y_m)
 
 for i in y_m:
     count_per_month.append(a.count(i))
 
 count_per_month = np.array(count_per_month)
+
+sns.kdeplot(data=y_m)
+plt.show()
 
 plt.title("Tweets by Month")
 plt.figure(figsize=(8,6), dpi=80)
